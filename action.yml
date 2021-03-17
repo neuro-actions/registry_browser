@@ -7,14 +7,12 @@ inputs:
   job_name:
     descr: Predictible subdomain name, which replaces JobID in the full job URI
     default: ""
-  image:
-    descr: image name
   http_auth:
     descr: whether to use http auth for jupter
     default: "True"
 
 job:
-    image: ${{ inputs.image }}
+    image: neuromation/docker_registry_frontend
     name: ${{ inputs.job_name }}
     preset: cpu-small
     http_port: 8080

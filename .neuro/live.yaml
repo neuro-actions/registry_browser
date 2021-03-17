@@ -8,5 +8,4 @@ jobs:
   jupyter:
     action: gh:neuro-actions/registry_browser@master
     args:
-      image: neuromation/registry_browser
       http_auth: "False"
