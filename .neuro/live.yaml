@@ -1,0 +1,12 @@
+kind: live
+title: Test
+
+defaults:
+  life_span: 1h
+
+jobs:
+  jupyter:
+    action: gh:neuro-actions/registry_browser@master
+    args:
+      image: neuromation/registry_browser
+      http_auth: "False"
