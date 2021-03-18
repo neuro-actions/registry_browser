@@ -2,10 +2,8 @@ kind: live
 title: Test
 
 defaults:
-  life_span: 1h
+  life_span: 3h
 
 jobs:
   browser:
     action: gh:neuro-actions/registry_browser@master
-    args:
-      http_auth: "False"

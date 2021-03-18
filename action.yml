@@ -5,7 +5,7 @@ descr: runs Neu.ro registry browser and opens it in default web browser
 
 inputs:
   job_name:
-    descr: Predictible subdomain name, which replaces JobID in the full job URI
+    descr: Predictable subdomain name, which replaces JobID in the full job URI
     default: ""
   http_auth:
     descr: whether to use http auth for browser
@@ -15,7 +15,8 @@ job:
     image: neuromation/docker-registry-frontend
     name: ${{ inputs.job_name }}
     preset: cpu-small
-    http_port: 80
-    http_auth: ${{ inputs.http_auth }}
     browse: True
     detach: True
+    pass_config: True
+    http_port: 80
+    http_auth: ${{ inputs.http_auth }}
