@@ -5,7 +5,7 @@ defaults:
   life_span: 1h
 
 jobs:
-  jupyter:
+  browser:
     action: gh:neuro-actions/registry_browser@master
     args:
       http_auth: "False"
