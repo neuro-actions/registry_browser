@@ -1,4 +1,4 @@
-# An action to start Filebrowser
+# An action to start Registry Browser
 
 This action launches an instance of [Docker Registry Frontend](https://github.com/neuro-inc/docker-registry-frontend) and opens it in the default browser.
 
