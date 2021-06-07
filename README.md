@@ -1,6 +1,6 @@
 # An action to start Filebrowser
 
-This action launches an instance of [Filebrowser](https://github.com/filebrowser/filebrowser) and opens it in the default browser.
+This action launches an instance of [Docker Registry Frontend](https://github.com/neuro-inc/docker-registry-frontend) and opens it in the default browser.
 
 Has no required arguments.
 
@@ -9,7 +9,7 @@ Has no required arguments.
 ```
 jobs:
   browser:
-    action: gh:neuro-actions/registry_browser@master
+    action: gh:neuro-actions/registry_browser@v1.0.0
 ```
 
 ## Arguments
